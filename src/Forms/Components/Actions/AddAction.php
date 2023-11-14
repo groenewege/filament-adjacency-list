@@ -38,6 +38,7 @@ class AddAction extends Action
                 ];
 
                 $component->state($items);
+                $component->callAfterStateUpdated();
             }
         );
 

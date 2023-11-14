@@ -63,6 +63,7 @@ class AdjacencyList extends Forms\Components\Field
                     }
 
                     $component->state($state);
+                    $component->callAfterStateUpdated();
                 },
             ],
         ]);

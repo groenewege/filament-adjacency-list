@@ -35,6 +35,7 @@ class DeleteAction extends Action
                 data_forget($items, $statePath);
 
                 $component->state($items);
+                $component->callAfterStateUpdated();
             }
         );
 

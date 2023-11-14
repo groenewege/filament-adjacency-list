@@ -41,6 +41,7 @@ class AddChildAction extends Action
                 ]);
 
                 $component->state($items);
+                $component->callAfterStateUpdated();
             }
         );
 

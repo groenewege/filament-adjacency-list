@@ -36,6 +36,7 @@ class EditAction extends Action
                 data_set($state, $statePath, $item);
 
                 $component->state($state);
+                $component->callAfterStateUpdated();
             }
         );
 
